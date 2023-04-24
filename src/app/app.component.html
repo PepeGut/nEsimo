@@ -1,0 +1,30 @@
+<div class="row mt-4 justify-content-center" >
+  <div class="col-sm-12 col-md-6">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Serie: </label>
+        <input class="form-control" id="serieInput" aria-describedby="serieHelp" [(ngModel)]="valorSerie" name="valorSerie">
+        <div id="serieHelp" class="form-text">La serie debe ser númerica separando cada elemento con un espacio</div>
+      </div>
+      <div></div>
+      <button (click)="nEsimo()" type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+  </div>
+</div>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <h4>Término n-ésimo</h4>
+      {{nEvalorFinal}}
+    </div>
+    <div class="col">
+      <h4>Múltiplos de Tres</h4>
+      {{multiplosTresFinal}}
+    </div>
+    <div class="col">
+      <h4>Números Primos</h4>
+      {{numerosPrimosFinal}}
+    </div>
+  </div>
+</div>
+
